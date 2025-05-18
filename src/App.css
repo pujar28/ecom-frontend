@@ -1,0 +1,70 @@
+.details-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 30px;
+}
+
+.details-image {
+  width: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.details-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.details-category,
+.details-description,
+.details-price,
+.details-rating {
+  font-size: 16px;
+  color: #333;
+}
+
+.details-rating {
+  display: flex;
+  align-items: center;
+}
+
+.details-rating::before {
+  content: "★";
+  color: gold;
+  margin-right: 5px;
+}
+
+.details-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-back {
+  margin: 10px;
+  background-color: #ddd;
+}
+
+.btn-wishlist {
+  background-color: #f8d7da;
+}
+
+.btn-cart {
+  background-color: #d4edda;
+}
