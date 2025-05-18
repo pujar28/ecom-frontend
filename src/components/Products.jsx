@@ -7,7 +7,7 @@ const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`);
         const data = await response.json(); // convert json to object
         setProducts(data);
       } catch (error) {
