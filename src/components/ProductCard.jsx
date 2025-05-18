@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Link to={`/product/${product.id}`} className="card-link">
+    <Link to={`/product/${product._id}`} className="card-link">
       <div className="card">
         <img src={product.image} alt={product.title} className="card-image" />
         <h4 className="card-title">{product.title}</h4>
