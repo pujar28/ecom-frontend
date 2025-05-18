@@ -30,7 +30,7 @@ const Products = () => {
       <h3 className="products-heading">Products Page</h3>
       <div className="products-grid">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product._id} product={product} />
         ))}
       </div>
     </div>
